@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<title>professor</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet"> 
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>	
+	<script src="bunny.js"></script>
+</head>
+<body>
+	<div id="content"></div>
+
+	<script id="search" type="x-tmpl-mustache">
+		<form id="searchform">
+			<h1>professor</h1>	
+			<input id="query"></input>	
+		</form>	
+	</script>
+	
+	<script id="results-temp" type="x-tmpl-mustache">
+		<div id="results"></div>
+	</script>
+
+	<script id="result" type="x-tmpl-mustache">
+		<a href="{{ link }}"><h2>{{ title }}</h2></a>
+	</script>
+
+	<script src="search.js"></script>
+</body>
+</html>
